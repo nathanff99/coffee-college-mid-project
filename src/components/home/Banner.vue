@@ -1,36 +1,49 @@
 <template>
   <section class="banner coffee-container">
     <div class="banner__content">
-      <h1 class="banner__title">Factory<br /><span>Iced Coffee</span></h1>
+      <h1 class="banner__title">
+        Factory<br><span>Iced Coffee</span>
+      </h1>
       <p class="banner__description">
         The Factory Frappuccino features extra dark cocoa blended with roasted
         coffee.
       </p>
-      <p class="banner__price">C$ 12.60</p>
+      <p class="banner__price">
+        C$ 12.60
+      </p>
 
-      <button class="banner__buy">Add to cart</button>
+      <button class="banner__buy">
+        Add to cart
+      </button>
     </div>
 
     <div class="banner__image">
-      <img class="image__main" src="images/iced-coffee.webp" alt="Iced Coffee" />
+      <img
+        class="image__main"
+        src="images/iced-coffee.webp"
+        alt="Iced Coffee"
+      >
 
       <div class="image__users">
         <img
           v-for="(user, index) in 5"
-          :src="`images/user${index + 1}.webp`"
           :key="`user-${index}`"
+          :src="`images/user${index + 1}.webp`"
           alt="Users"
-        />
+        >
       </div>
     </div>
 
     <div class="banner__features">
       <div
         v-for="(feature, index) in features"
-        class="feature__item"
         :key="`feature-${index}`"
+        class="feature__item"
       >
-        <i class="iconify" :data-icon="feature.icon"></i>
+        <i
+          class="iconify"
+          :data-icon="feature.icon"
+        />
         <div class="feature__text">
           <h3>{{ feature.title }}</h3>
           <p>{{ feature.description }}</p>
@@ -42,30 +55,30 @@
 
 <script>
 export default {
-  name: "banner",
+  name: 'Banner',
 
   data() {
     return {
       features: [
         {
-          title: "Beautiful Cups",
-          description: "Cups that keep your drink tastier.",
-          icon: "raphael:coffee",
+          title: 'Beautiful Cups',
+          description: 'Cups that keep your drink tastier.',
+          icon: 'raphael:coffee'
         },
         {
-          title: "Donuts",
-          description: "Enjoy our delicious and free donuts.",
-          icon: "game-icons:donut",
+          title: 'Donuts',
+          description: 'Enjoy our delicious and free donuts.',
+          icon: 'game-icons:donut'
         },
         {
-          title: "Own coffee",
-          description: "We grow our own coffee, enjoy.",
-          icon: "fluent-mdl2:coffee",
-        },
-      ],
-    };
-  },
-};
+          title: 'Own coffee',
+          description: 'We grow our own coffee, enjoy.',
+          icon: 'fluent-mdl2:coffee'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

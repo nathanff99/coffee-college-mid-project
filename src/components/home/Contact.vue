@@ -1,5 +1,8 @@
 <template>
-  <section id="contact" class="contact">
+  <section
+    id="contact"
+    class="contact"
+  >
     <div class="coffee-container">
       <div class="contact__text">
         <h2>Contact Us</h2>
@@ -10,14 +13,27 @@
       </div>
 
       <form class="contact__form">
-        <input type="text" class="contact__input" placeholder="Name" />
-        <input type="email" class="contact__input" placeholder="E-mail" />
+        <input
+          type="text"
+          class="contact__input"
+          placeholder="Name"
+        >
+        <input
+          type="email"
+          class="contact__input"
+          placeholder="E-mail"
+        >
         <textarea
           name="message"
           class="contact__input"
           placeholder="Message"
-        ></textarea>
-        <button class="contact__button" type="submit">Send</button>
+        />
+        <button
+          class="contact__button"
+          type="submit"
+        >
+          Send
+        </button>
       </form>
     </div>
   </section>
@@ -25,8 +41,8 @@
 
 <script>
 export default {
-  name: "contact",
-};
+  name: 'Contact'
+}
 </script>
 
 <style lang="scss" scoped>

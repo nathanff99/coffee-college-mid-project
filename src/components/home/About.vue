@@ -1,5 +1,8 @@
 <template>
-  <section id="about" class="about">
+  <section
+    id="about"
+    class="about"
+  >
     <ShapeOne class="about__shape" />
 
     <div class="about__content coffee-container">
@@ -7,7 +10,7 @@
         class="about__image"
         src="images/iced-coffee-hand.webp"
         alt="Iced Coffee"
-      />
+      >
 
       <div class="about__text">
         <h2>The best coffee in your home town</h2>
@@ -27,17 +30,17 @@
 </template>
 
 <script>
-import ShapeOne from "../shapes/ShapeOne.vue";
-import ShapeTwo from "../shapes/ShapeTwo.vue";
+import ShapeOne from '../shapes/ShapeOne.vue'
+import ShapeTwo from '../shapes/ShapeTwo.vue'
 
 export default {
-  name: "about",
+  name: 'About',
 
   components: {
     ShapeOne,
     ShapeTwo
-  },
-};
+  }
+}
 </script>
 
 <style lang="scss" scoped>

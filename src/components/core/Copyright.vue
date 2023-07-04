@@ -1,15 +1,17 @@
 <template>
-  <footer class="footer">© 2023 Coffee Factory Mid project</footer>
+  <footer class="copyright">
+    © 2023 Coffee Factory Mid project
+  </footer>
 </template>
 
 <script>
 export default {
-  name: "footer",
-};
+  name: 'Copyright'
+}
 </script>
 
 <style lang="scss" scoped>
-.footer {
+.copyright {
   background-color: #35282b;
   color: #fff;
   text-align: center;

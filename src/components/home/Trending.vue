@@ -1,5 +1,8 @@
 <template>
-  <section id="trending" class="trending">
+  <section
+    id="trending"
+    class="trending"
+  >
     <div class="trending__list coffee-container">
       <article
         v-for="(item, index) in 4"
@@ -10,9 +13,11 @@
           class="item__image"
           src="images/iced-coffee.webp"
           alt="Iced Coffee"
-        />
+        >
 
-        <h3 class="item__title">Iced Coffe</h3>
+        <h3 class="item__title">
+          Iced Coffe
+        </h3>
         <a class="item__action">Add to cart +</a>
       </article>
     </div>
@@ -21,8 +26,8 @@
 
 <script>
 export default {
-  name: "trending",
-};
+  name: 'Trending'
+}
 </script>
 
 <style lang="scss" scoped>

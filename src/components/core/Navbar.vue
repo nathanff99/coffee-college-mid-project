@@ -1,9 +1,17 @@
 <template>
   <div class="navbar coffee-container">
-    <div class="navbar__logo">Coffee <span>Factory</span></div>
+    <div class="navbar__logo">
+      Coffee <span>Factory</span>
+    </div>
 
-    <a class="navbar__open" @click="showMobileMenu = !showMobileMenu">
-      <i class="iconify" data-icon="ic:round-menu" />
+    <a
+      class="navbar__open"
+      @click="showMobileMenu = !showMobileMenu"
+    >
+      <i
+        class="iconify"
+        data-icon="ic:round-menu"
+      />
     </a>
 
     <div
@@ -13,8 +21,14 @@
         'navbar__content--closed': !showMobileMenu,
       }"
     >
-      <a class="navbar__close" @click="showMobileMenu = !showMobileMenu">
-        <i class="iconify" data-icon="ic:round-close" />
+      <a
+        class="navbar__close"
+        @click="showMobileMenu = !showMobileMenu"
+      >
+        <i
+          class="iconify"
+          data-icon="ic:round-close"
+        />
       </a>
 
       <ul class="navbar__menu">
@@ -27,14 +41,16 @@
             :href="link.href"
             class="navbar__link"
             @click="showMobileMenu = false"
-            >{{ link.name }}</a
-          >
+          >{{ link.name }}</a>
         </li>
       </ul>
 
       <div class="navbar__cart">
-        <i class="iconify" data-icon="mdi-cart-outline" />
-        <span class="navbar__counter"></span>
+        <i
+          class="iconify"
+          data-icon="mdi-cart-outline"
+        />
+        <span class="navbar__counter" />
       </div>
     </div>
   </div>
@@ -42,26 +58,26 @@
 
 <script>
 export default {
-  name: "navbar",
+  name: 'Navbar',
 
   data() {
     return {
       showMobileMenu: false,
       menuLinks: [
-        { name: "Home", href: "#" },
-        { name: "About", href: "#about" },
-        { name: "Trending", href: "#trending" },
-        { name: "Delivery", href: "#delivery" },
-        { name: "Contact", href: "#contact" },
-      ],
-    };
+        { name: 'Home', href: '#' },
+        { name: 'About', href: '#about' },
+        { name: 'Trending', href: '#trending' },
+        { name: 'Delivery', href: '#delivery' },
+        { name: 'Contact', href: '#contact' }
+      ]
+    }
   },
   methods: {
     showMenu() {
-      this.showMobileMenu = !this.showMobileMenu;
-    },
-  },
-};
+      this.showMobileMenu = !this.showMobileMenu
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

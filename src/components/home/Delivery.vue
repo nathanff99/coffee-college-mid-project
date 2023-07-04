@@ -1,5 +1,8 @@
 <template>
-  <section id="delivery" class="delivery">
+  <section
+    id="delivery"
+    class="delivery"
+  >
     <div class="coffee-container">
       <div class="delivery__text">
         <h2>We are in the best apps</h2>
@@ -18,7 +21,7 @@
           class="delivery__item"
           :src="`images/${app.image}`"
           :alt="app.name"
-        />
+        >
       </div>
     </div>
   </section>
@@ -26,18 +29,18 @@
 
 <script>
 export default {
-  name: "delivery",
+  name: 'Delivery',
 
   data() {
     return {
       apps: [
-        { name: "Doordash", image: "doordash.webp" },
-        { name: "Uber Eats", image: "uber-eats.webp" },
-        { name: "Skip The Dishes", image: "skip-the-dishes.webp" },
-      ],
-    };
-  },
-};
+        { name: 'Doordash', image: 'doordash.webp' },
+        { name: 'Uber Eats', image: 'uber-eats.webp' },
+        { name: 'Skip The Dishes', image: 'skip-the-dishes.webp' }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
