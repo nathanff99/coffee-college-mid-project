@@ -19,7 +19,7 @@
           v-for="(app, index) in apps"
           :key="`app-${index}`"
           class="delivery__item"
-          :src="`images/${app.image}`"
+          :src="`/images/${app.image}`"
           :alt="app.name"
         >
       </div>

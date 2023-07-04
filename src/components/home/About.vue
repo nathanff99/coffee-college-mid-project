@@ -8,7 +8,7 @@
     <div class="about__content coffee-container">
       <img
         class="about__image"
-        src="images/iced-coffee-hand.webp"
+        src="/images/iced-coffee-hand.webp"
         alt="Iced Coffee"
       >
 

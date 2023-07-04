@@ -11,7 +11,7 @@
       >
         <img
           class="item__image"
-          src="images/iced-coffee.webp"
+          src="/images/iced-coffee.webp"
           alt="Iced Coffee"
         >
 

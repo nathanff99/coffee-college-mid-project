@@ -20,7 +20,7 @@
     <div class="banner__image">
       <img
         class="image__main"
-        src="images/iced-coffee.webp"
+        src="/images/iced-coffee.webp"
         alt="Iced Coffee"
       >
 
