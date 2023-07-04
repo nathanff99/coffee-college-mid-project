@@ -1,14 +1,11 @@
 # coffee-mid-project
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Project developed for the web development course at my college in Canada.
+Some information about the project
+- Vue 2 with Vite
+- Fully responsive
+- SCSS using BEM methodology
+- Eslint for code quality
 
 ## Project Setup
 
